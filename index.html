@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            align-items: center;
+            justify-content: center;
+
+
+
+        }
+
+        .Container {
+
+            display: flex;
+            font-family: 'Pacifico';
+
+            width: 100vw;
+            background-color: #d3c3552e;
+            transition-property: background-color;
+            transition-duration: 2s;
+
+
+
+        }
+
+        .para {
+
+            display: flex;
+
+            margin: 0%;
+            /*justify-content: center;*/
+
+            padding: 2rem 4rem;
+
+
+            width: 6.875rem;
+            font-size: 1.2rem;
+            border-color: aqua;
+
+
+            transition-property: all;
+            transition-duration: 0.65s;
+
+        }
+
+        #imge {
+            position: relative;
+            margin: 0%;
+            padding: 1.3125rem 4.375rem;
+            background-image: url('th.jpg');
+
+            background-size: 100%;
+            background-position: center center;
+
+        }
+
+
+        #an {
+            justify-content: center;
+            background-color: #d34c0c;
+        }
+
+        #an:hover {
+            color: wheat;
+        }
+
+        .para:hover {
+
+            color: brown;
+            font-size: 1.4rem;
+            cursor: pointer;
+
+        }
+
+        .third {
+            z-index: -1;
+            display: grid;
+            grid-template-areas:
+                'left right'
+
+                'footer footer';
+            height: 88.3vh;
+        }
+
+        .hello {
+            background-image: url('macarons-gdaecd1d45_1280.jpg');
+            grid-area: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 70vw;
+            opacity: 0.9;
+            z-index: +2;
+            box-shadow: 0.3125rem 0.3125rem 1.1875rem 0.375rem black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 4.2rem;
+            animation: change 20s infinite ease-in-out;
+            animation-delay: 3s;
+
+        }
+
+        .hello2 {
+            /*background-color: blue;*/
+            background-image: url('Old\ page\ 1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            grid-area: right;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            width: 30vw;
+            box-shadow: 0.45rem 0.45rem 1.1875rem 0.375rem black;
+            z-index: +2;
+        }
+
+        .form-group input {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding: 0.0625rem;
+            border: 2px solid black;
+            margin: 0.6875rem auto;
+            font-size: 1.3rem;
+            border-radius: 0.5rem;
+        }
+
+        .containers {
+
+            /*background-color: brown;*/
+            background-image: url('Old\ page\ 2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            margin: 3.6875rem 2.875rem;
+            padding: 4.6875rem;
+
+            width: 100%;
+            border-radius: 1.75rem;
+        }
+
+        .containers button {
+            display: block;
+            width: 74%;
+            margin: 0.769rem auto;
+            height: 10%;
+        }
+
+        @media only screen and (max-width: 1200px) {
+          
+
+            .Container {
+
+                display: flex;
+                font-family: 'Pacifico';
+
+                width: 100vw;
+                background-color: #d3c3552e;
+                transition-property: background-color;
+                transition-duration: 2s;
+
+
+
+            }
+
+
+
+            .para {
+
+                display: flex;
+
+                margin: 0%;
+                /*justify-content: center;*/
+
+                padding: 3rem 4.375rem;
+
+
+                width: 6.875rem;
+                font-size: 1.5rem;
+                border-color: aqua;
+
+
+                transition-property: all;
+                transition-duration: 1.2s;
+
+
+            }
+
+            .third {
+                display: grid;
+                grid-template-areas:
+                    'left left'
+                    'right right'
+                    'footer footer';
+            }
+
+            .hello {
+                display: flex;
+                width: 1200px;
+                height: 100vh;
+                background-image: url('macarons-gdaecd1d45_1280.jpg');
+                grid-area: left;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                opacity: 0.8;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 4.2rem;
+                animation: change2 20s infinite ease-in-out;
+                animation-delay: 3s;
+
+            }
+
+            .hello2 {
+                width: 1200px;
+                z-index: 3;
+            }
+
+            .footer {
+
+                width: 1200px;
+                height: 50vh;
+            }
+
+            .Container {
+                width: 1200px;
+            }
+
+            .form-group input {
+                font-family: 'Baloo Bhai', cursive;
+                text-align: center;
+                display: block;
+                width: 60%;
+                padding: 0.0625rem;
+                border: 2px solid black;
+                margin: 0.6875rem auto;
+                font-size: 1.3rem;
+                border-radius: 0.5rem;
+            }
+
+            .containers {
+
+                /*background-color: brown;*/
+                background-image: url('Old\ page\ 2.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                margin: 3.6875rem 2.875rem;
+                padding: 4.6875rem;
+
+                width: 50%;
+                border-radius: 1.75rem;
+            }
+
+            .containers button {
+                display: block;
+                width: 40%;
+                margin: 0.769rem auto;
+                height: 10%;
+            }
+
+
+        }
+
+
+        @keyframes change {
+            23% {
+                background-image: url('cheesecake-gd988fb85e_1280.jpg');
+            }
+
+            46% {
+                background-image: url('macarons-gdaecd1d45_1280.jpg');
+            }
+
+            69% {
+                background-image: url('muffin-g7871242f1_1280.jpg');
+            }
+
+            85% {
+                background-image: url('pexels-arminas-raudys-808923.jpg');
+            }
+
+        }
+
+        @keyframes change2 {
+            23% {
+                background-image: url('cheesecake-gd988fb85e_1280.jpg');
+            }
+
+            46% {
+                background-image: url('macarons-gdaecd1d45_1280.jpg');
+            }
+
+            69% {
+                background-image: url('muffin-g7871242f1_1280.jpg');
+            }
+
+            85% {
+                background-image: url('pexels-arminas-raudys-808923.jpg');
+            }
+
+        }
+
+
+        .itachi {
+            color: #d34c0c;
+            -webkit-text-stroke: 3px black;
+            text-shadow: -2px 3px 0 black;
+        
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #000000;
+            flex-direction: row;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 1.7rem;
+            grid-area: footer;
+            height: 30vh;
+            background: -webkit-linear-gradient(270deg, #d34c0c, #d34c0c, #d34c0c,#d3c3552e, #d3c3552e);
+
+        }
+
+        .foot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .foot2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+
+
+
+        .containers h1 {
+            text-align: center;
+        }
+
+
+
+        button:hover {
+            cursor: pointer;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="para" id="an">PARADISE</div>
+        <div class="para" id="imge"></div>
+        <div class="para" id="home">Home</div>
+        <div class="para">Recipes</div>
+        <div class="para">Cuisines</div>
+
+
+    </div>
+    <div class="third">
+        <div class="hello">
+            <div class="itachi">
+                Welcome to a place where you can explore the world of delight and yummyness.</div>
+        </div>
+        <div class="hello2">
+            <div class="containers">
+                <h1>Sign up with Paradise</h1>
+                <form action="noaction.php">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Age">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your City">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Email Id">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Password">
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <div class="foot">
+                    You can follow us on our social media platforms as well</div>
+                <div> Instagram-  @Paradise_food</div>
+                <div>Facebook-  food_Paradise</div>
+            </div>
+            <div class="foot2">
+                <div>Or you just contact us on the given phone number</div>
+                <div>9303756992</div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
